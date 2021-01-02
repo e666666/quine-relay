@@ -294,10 +294,10 @@ QR.als: qr.adb
 QR.aheui: QR.als
 	@echo
 	@echo "##########################"
-	@echo "##  32: AFNIX -> Aheui  ##"
+	@echo "##  32: ¯\\_(ツ)_/¯  ##"
 	@echo "##########################"
 	@echo
-	LANG=C LD_LIBRARY_PATH=/usr/lib/afnix axi QR.als > QR.aheui
+	wget https://github.com/mame/quine-relay/raw/spoiler/QR.aheui
 
 QR.a68: QR.aheui
 	@echo
