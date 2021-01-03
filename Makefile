@@ -615,7 +615,7 @@ QR.gdb: QR.g
 	@echo "##  70: GAP -> GDB  ##"
 	@echo "######################"
 	@echo
-	gap -q QR.g > QR.gdb
+	gap -q QR.g | tr -d '\r' > QR.gdb
 
 QR.gel: QR.gdb
 	@echo
