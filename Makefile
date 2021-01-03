@@ -545,8 +545,7 @@ QR.false: QR.fsx
 	@echo "##  62: F# -> FALSE  ##"
 	@echo "#######################"
 	@echo
-	fsharpc QR.fsx -o QR.exe
-	mono QR.exe > QR.false
+	dotnet fsi QR.fsx > QR.false
 
 QR.fl: QR.false
 	@echo
