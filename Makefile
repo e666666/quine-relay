@@ -294,10 +294,10 @@ QR.als: qr.adb
 QR.aheui: QR.als
 	@echo
 	@echo "##########################"
-	@echo "##  32: ¯\\_(ツ)_/¯  ##"
+	@echo "##  32:   ¯\\_(ツ)_/¯   ##"
 	@echo "##########################"
 	@echo
-	wget https://github.com/mame/quine-relay/raw/spoiler/QR.aheui
+	[ ! -f ./QR.aheui ] && wget https://github.com/mame/quine-relay/raw/spoiler/QR.aheui && touch QR.aheui
 
 QR.a68: QR.aheui
 	@echo
@@ -497,7 +497,7 @@ QR.dc: QR.dfy
 	@echo "##  56: ¯\\_(ツ)_/¯  ##"
 	@echo "#######################"
 	@echo
-	wget https://raw.githubusercontent.com/mame/quine-relay/spoiler/QR.dc
+	[ ! -f ./QR.dc ] && wget https://raw.githubusercontent.com/mame/quine-relay/spoiler/QR.dc && touch QR.dc
 
 QR.dhall: QR.dc
 	@echo
